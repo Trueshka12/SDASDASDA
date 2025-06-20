@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True - Forest of Reapers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="5ufw.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <img src="photo_2025-06-15_18-49-45.jpg" alt="Avatar" class="avatar">
+        <h1 class="username">True</h1>
+        <div class="buttons">
+            <button onclick="window.open('https://t.me/', '_blank')" class="neon-btn">Telegram</button>
+            <button onclick="copyDiscord()" class="neon-btn">Discord: ok.1.1</button>
+        </div>
+        <div class="server-box">
+            <img src="photo_2025-06-18_02-03-54.jpg" class="server-icon" alt="FR">
+            <p class="server-stats" id="serverStats">Checking online...</p>
+            <a href="https://discord.gg/forest-of-reapers" class="neon-btn join-btn">Join Server</a>
+        </div>
+    </div>
+
+    <div class="music-player" id="musicPlayer">
+        <audio id="bgMusic" autoplay loop>
+            <source src="tmphzk69b2x.mp3" type="audio/mp3">
+        </audio>
+        <div class="track-info">Гладиатор/Рыцарь</div>
+        <button class="play-btn" onclick="toggleMusic()" id="playPause">⏸</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
